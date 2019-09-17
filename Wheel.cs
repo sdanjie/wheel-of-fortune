@@ -39,5 +39,5 @@ namespace WheelOfFortune
         {
             get { return dollar; }
         }
-    }   // end class
-}   // end namespace
+    }
+}
