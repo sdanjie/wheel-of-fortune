@@ -192,12 +192,12 @@ namespace WheelOfFortune
                     countFilledBoxes += 1;
                 }
             }
-            if ( countFilledBoxes == 13)    // the puzzle has 13 letters
+            if ( countFilledBoxes == 13)    // the current puzzle has 13 letters
             {
                 boxFilled = true;
             }
             return boxFilled;
-        }   // end IsAllBoxFilled
+        }
 
-    }   // end class
-}   // end namespace
+    }
+}
