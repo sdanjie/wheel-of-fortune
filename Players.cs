@@ -1,8 +1,7 @@
 ﻿/* Players class computes  who is the current player
- * The id of 0 represents the "Player 1" and so
+ * For example: The id of 0 represents the "Player 1"
  *  _id (player's id: 0, 1, or 2)
  *  _name (player's name: Player 1, Player 2, Player 3)
- * 
 */
 using System;
 using System.Collections.Generic;
@@ -17,7 +16,6 @@ namespace WheelOfFortune
         private int _id;
         private string _name;
 
-        // Constructor
         public Players()
         {
             _id = 0;
@@ -43,18 +41,16 @@ namespace WheelOfFortune
                 _id = 2;
                 _name = "Player 3";
             }
-        }   // end CurrentPlayer method
-
-        // Return player id
+        }
+   
         public int ID
         {
             get { return _id; }
         }
-
-        // Return player name
+        
         public string Name
         {
             get { return _name; }
         }
-    }   // end class
-}   // end namespace
+    }
+}
