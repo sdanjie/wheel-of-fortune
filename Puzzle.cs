@@ -32,28 +32,27 @@ namespace WheelOfFortune
                     letterCounts += 1;
                 }
             }
-        }   // end CountLetter Method
-
-        // Return the number of a letter
+        }
+        
         public int NumOfLetter
         {
             get { return letterCounts; }
         }
 
         // Determine if the player solve the puzzle
-        // To call this method, using Puzzle.IsPuzzleSolved(string args)
+        // Static method: To call this method, using Puzzle.IsPuzzleSolved(string args)
         public static bool IsPuzzleSolved(string puz)
         {
             int spacePosition = puz.IndexOf(" ", 0);
             puz = puz.ToUpper().Trim();
             
-            // Remove spaces from the puz
+            // Remove spaces from the puz user has entered
             while (spacePosition != -1)
             {
                 puz = puz.Remove(spacePosition, 1);
                 spacePosition = puz.IndexOf(" ", spacePosition + 1);
             }
-            // Compare original puzzle(PUZZLE) and entered one(puz)
+           
             if (puz == PUZZLE)
             {
                 return true;
@@ -62,7 +61,7 @@ namespace WheelOfFortune
             {
                 return false;
             }
-        }   // end IsPuzzleSolved method
+        }
 
         // Return the origin puzzle
         // To call it, using Puzzle.OriginPuzzle
@@ -70,5 +69,5 @@ namespace WheelOfFortune
         {
             get { return PUZZLE; }
         }
-    }   // end class
-}   // end namespace
+    }
+}
