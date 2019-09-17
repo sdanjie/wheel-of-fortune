@@ -1,7 +1,6 @@
 ﻿/*
  * Danjie Song
  * Update: 12/12/2017
- * CSC153 C# Programming: Wheel of Fortune
  */
 using System;
 using System.Collections.Generic;
